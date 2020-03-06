@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  notebooks:
+    build:
+      context: .
+    container_name: notebooks
+    ports: 
+      - 8888:8888
