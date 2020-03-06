@@ -4,4 +4,5 @@ COPY . /home/notebooks/
 
 WORKDIR /home/notebooks/
 
-RUN jupyter lab
+CMD ["/opt/conda/bin/conda", "install", "jupyterlab"]
+CMD ["jupyter", "lab", "--ip='*'", "--port=8888", "--no-browser", "--allow-root"]
