@@ -7,3 +7,5 @@ services:
     container_name: notebooks
     ports: 
       - 8888:8888
+    volumes:
+      - .:/home/notebooks/
