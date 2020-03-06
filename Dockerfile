@@ -1,6 +1,6 @@
 FROM continuumio/anaconda3
 
-COPY *.ipynb /home/notebooks/
+COPY . /home/notebooks/
 
 WORKDIR /home/notebooks/
 
